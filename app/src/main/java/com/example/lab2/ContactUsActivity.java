@@ -1,6 +1,9 @@
 package com.example.lab2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class ContactUsActivity extends AppCompatActivity {
+    Button UndoButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,16 @@ public class ContactUsActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        UndoButton = findViewById(R.id.button2);
+        UndoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("button clicked");
+                Intent ContactUsActivity = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(ContactUsActivity);
+
+            }
         });
     }
 }
