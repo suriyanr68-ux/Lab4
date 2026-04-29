@@ -1,6 +1,9 @@
 package com.example.lab2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    Button NextButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,5 +44,16 @@ public class MainActivity extends AppCompatActivity {
        User user1 = new NoteStudent ();
        user1.name = "Suriyan";
        user1.massage = "Please, get me an A grade.";
+
+       NextButton = findViewById(R.id.button);
+       NextButton.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+                System.out.println("button clicked");
+               Intent ContactUsActivity = new Intent(getApplicationContext(),ContactUsActivity.class);
+               startActivity(ContactUsActivity);
+
+           }
+       });
     }
 }
