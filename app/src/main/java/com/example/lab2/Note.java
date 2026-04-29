@@ -5,12 +5,35 @@ public  abstract class Note {
         protected String content;
         protected String createdDate;
 
+        public Note(){}
     public Note(String title, String content) {
         this.title = title;
         this.content = content;
         this.createdDate = createdDate;
     }
+    public String getTitle() {
+        return title;
+    }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getCreatedDate() {
+        return createdDate;
+    }
+
+    public void setCreatedDate(String createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    void setContent(String content) {
+        this.content = content;
+    }
     void getSummary(){
        System.out.println(this.title+" "+createdDate);
    }

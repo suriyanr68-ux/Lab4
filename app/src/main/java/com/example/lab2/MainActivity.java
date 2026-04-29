@@ -21,17 +21,18 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-       Note note1 = new TextNote();
-       note1.title = "Lab4";
-       note1.content = "Do and sent Lab4 before due date";
-       note1.createdDate = "29/04/2026";
-       note1.getSummary();
+        Note note1 = new TextNote();
+        note1.setTitle("Lab4");
+        note1.setCreatedDate("29/04/2026");
+        ((TextNote) note1).setContent("Do and send Lab4 before due date");
 
-       TextNote textNote = new TextNote();
+        note1.getSummary();
+
+       Note textNote = new TextNote();
        textNote.title = "Study Java nakub";
        textNote.content = "Please, get me an A grade nahub khunkru";
 
-       Checklist checklist = new Checklist();
+        Checklist checklist = new Checklist("Daily Task", "Thing to do");
        checklist.title = "Daily Task";
        checklist.content = "Thing to day";
 

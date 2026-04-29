@@ -6,11 +6,13 @@ public class Checklist extends Note {
     private List<String> item;
     private List<Boolean> status;
 
-    public Checklist(){
+    public Checklist(String title, String content){
         super(title, content);
         this.item = new ArrayList<>();
         this.status = new ArrayList<>();
     }
+
+
 
     public List<String> getItem() {
         return item;
@@ -19,8 +21,8 @@ public class Checklist extends Note {
     public List<Boolean> getStatus() {
         return status;
     }
-    public void addItem(String item) throws InterruptedException {
-        item.wait(Long.parseLong(item));
+    public void addItem(String newitem) {
+        item.add(newitem);
         status.add(false);
     }
 }
