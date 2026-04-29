@@ -27,13 +27,6 @@ public  abstract class Note {
         this.createdDate = createdDate;
     }
 
-    public String getContent() {
-        return content;
-    }
-
-    void setContent(String content) {
-        this.content = content;
-    }
     void getSummary(){
        System.out.println(this.title+" "+createdDate);
    }
