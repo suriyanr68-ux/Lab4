@@ -1,14 +1,19 @@
 package com.example.lab2;
 
-public class Note {
-        String title;
-        String content;
-        String createdDate;
+public  abstract class Note {
+        protected String title;
+        protected String content;
+        protected String createdDate;
 
-        void getSummary(){
-            System.out.print(this.title);
-            System.out.print(this.content+" "+this.createdDate);
-        }
+    public Note(String title, String content) {
+        this.title = title;
+        this.content = content;
+        this.createdDate = createdDate;
+    }
+
+    void getSummary(){
+       System.out.println(this.title+" "+createdDate);
+   }
 
     }
 

@@ -1,8 +1,8 @@
 package com.example.lab2;
 
 public class User {
-    String name;
-    String massage;
+    protected String name;
+    protected String massage;
 
     void write(){
 
