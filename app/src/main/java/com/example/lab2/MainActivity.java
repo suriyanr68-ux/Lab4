@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
        checklist.title = "Daily Task";
        checklist.content = "Thing to day";
 
-       User user1 = new User ();
+       User user1 = new NoteStudent ();
        user1.name = "Suriyan";
        user1.massage = "Please, get me an A grade.";
     }

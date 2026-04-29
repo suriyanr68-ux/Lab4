@@ -1,6 +1,6 @@
 package com.example.lab2;
 
-public class User {
+public abstract class User {
     protected String name;
     protected String massage;
 
