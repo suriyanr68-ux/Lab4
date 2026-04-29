@@ -20,10 +20,10 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="181dp"
-        android:layout_height="153dp"
-        android:layout_marginEnd="126dp"
-        android:layout_marginBottom="161dp"
+        android:layout_width="86dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="148dp"
         android:background="#000000"
         android:shadowColor="#2B2D30"
         android:text="Prev"
@@ -35,4 +35,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:rippleColor="#0B0B0B" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="173dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

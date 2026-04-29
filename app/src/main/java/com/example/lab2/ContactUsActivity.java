@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class ContactUsActivity extends AppCompatActivity {
-    Button PrevButton;
+    Button PrevButton,Next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class ContactUsActivity extends AppCompatActivity {
             return insets;
         });
         PrevButton = findViewById(R.id.button2);
+
         PrevButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,6 +34,17 @@ public class ContactUsActivity extends AppCompatActivity {
                 startActivity(MainActivity);
 
             }
+
+        });
+        Next = findViewById(R.id.button4);
+        Next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("button clicked");
+                Intent AddNoteActivity = new Intent(getApplicationContext(),AddNoteActivity.class);
+                startActivity(AddNoteActivity);
+            }
         });
     }
 }
+
