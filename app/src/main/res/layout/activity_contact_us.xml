@@ -24,7 +24,15 @@
         android:layout_height="153dp"
         android:layout_marginEnd="126dp"
         android:layout_marginBottom="161dp"
-        android:text="Button"
+        android:background="#000000"
+        android:shadowColor="#2B2D30"
+        android:text="Prev"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#000000"
+        android:textStyle="bold"
+        app:icon="@drawable/m3_split_button_chevron_avd"
+        app:iconTint="#D32B2B"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#0B0B0B" />
 </androidx.constraintlayout.widget.ConstraintLayout>
